@@ -371,13 +371,18 @@ export const Mover = styled.div`
 
     right: 0;  
   }
-  }
+  
+  @media (max-width: 1300px) {
+    position: fixed;
+    left:60vw;
 
+  }
 
 
   @media (max-width: 900px) {
     position: fixed;
-left:0; text-align: center;
+left:40px;
+text-align: center;
 &.scrolled {
   position: fixed;
   left:120px; 
