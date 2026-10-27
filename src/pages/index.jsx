@@ -19,7 +19,7 @@ import {
   Divzin,
 } from "./components/style";
 function Home() {
-  const imagePath = "https://image.tmdb.org/t/p/original";
+  const imagePath = "https://image.tmdb.org/t/p/w500";
   const KEY = process.env.REACT_APP_KEY;
   const [recentMovies, setRecentMovies] = useState([]);
   const [popularMovies, setPopularMovies] = useState([]);
@@ -231,7 +231,7 @@ function Home() {
         <Stylez>
           <Mover className={isSearchEmpty ? "" : "scrolled"}>
             <columne>
-              <img src="/image/icon.png" alt="Ícone" />
+              <img src={`${process.env.PUBLIC_URL}/image/icon.png`} alt="Ícone" />
             </columne>
 
             <columne>

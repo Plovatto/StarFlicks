@@ -19,7 +19,7 @@ function RandomImageCarousel() {
 
       const posterImages = data.results.map(
         (movie) =>
-          `https://image.tmdb.org/t/p/original${movie.backdrop_path}`
+          `https://image.tmdb.org/t/p/w1280${movie.backdrop_path}`
       );
 
       setImages(posterImages);
